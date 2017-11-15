@@ -27,6 +27,9 @@ int main()
 }
 
 void debut_jeu()
+//BUT:Afficher le message de bienvenue et de saisie d'un mot
+//ENTREE:Aucune
+//SORTIE:Aucune
 {
     char mot_entre[TAILLEMAX];
 
@@ -38,6 +41,9 @@ void debut_jeu()
 }
 
 void remplacement_mot(char mot_entre[TAILLEMAX],char mot_masque[TAILLEMAX],int longueur_mot)
+//BUT:Remplacer le mot masqué par un symbole choisi
+//ENTREE:Le mot rentré
+//SORTIE:Aucune
 {
     int i=0;
 
@@ -48,6 +54,9 @@ void remplacement_mot(char mot_entre[TAILLEMAX],char mot_masque[TAILLEMAX],int l
 }
 
 int comparaison_mot(char mot_entre[TAILLEMAX],char mot_masque[TAILLEMAX],int longueur_mot)
+//BUT:Comparer le caractère rentré avec le mot
+//ENTREE:Le mot entré , le mot masqué le caractère choisit
+//SORTIE:Nombre d'essais restants ainsi que si une lettre à été trouvée ou non
 {
     int essais=10,i=0;
     char caractere;
@@ -70,6 +79,9 @@ int comparaison_mot(char mot_entre[TAILLEMAX],char mot_masque[TAILLEMAX],int lon
 }
 
 int fin_jeu (char mot_entre[TAILLEMAX],char mot_masque[TAILLEMAX])
+//BUT:Afficher si le joueur à gagné ou non
+//ENTREE:Le mot entré et le mot masqué
+//SORTIE:Retourne si le joueur a gagné ou non
 {
     int test=0;
     if (strcmp(mot_entre,mot_masque)==0)
